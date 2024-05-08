@@ -1,0 +1,69 @@
+.brand-admin-register-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.brand-admin-register-stats {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  color: black !important;
+  font-size: 30px;
+}
+
+.brand-admin-register-dropdown {
+  font-size: 1rem;
+  padding: 5px 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.brand-admin-register-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffdede;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.brand-admin-register-table th,
+.brand-admin-register-table td {
+  text-align: center;
+  padding: 12px;
+}
+
+.brand-admin-register-table th {
+  background-color: #b76d6d;
+  color: white;
+}
+
+.brand-admin-register-table tr:nth-child(even) {
+  background-color: #ffcdcd;
+}
+
+.brand-admin-register-table tr:hover {
+  cursor: pointer;
+}
+
+.view-registration-button {
+  padding: 10px 20px;
+  background-color: #6d93b7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  text-align: center;
+}
+
+.brand-admin-register-controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

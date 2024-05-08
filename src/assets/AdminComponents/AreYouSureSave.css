@@ -1,0 +1,67 @@
+/* Overlay covering the entire viewport */
+.save-confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+}
+
+/* Popup container */
+.save-confirmation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: auto; /* Adjust width as necessary */
+  max-width: 400px; /* Prevent it from becoming too wide on larger screens */
+}
+
+/* Styling for the message */
+.save-confirmation p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.save-confirmation .save-item {
+  font-weight: bold;
+  color: #28a745; /* Green color for the save item */
+}
+
+/* General button styling */
+.save-confirmation button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+/* Save/Yes button */
+.save-confirmation button.save {
+  background-color: #28a745; /* Green color */
+  color: white;
+}
+
+.save-confirmation button.save:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Cancel/No button */
+.save-confirmation button.cancel {
+  background-color: #dc3545; /* Red color */
+  color: white;
+}
+
+.save-confirmation button.cancel:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

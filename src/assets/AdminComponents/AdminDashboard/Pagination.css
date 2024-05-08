@@ -1,0 +1,79 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.page-button {
+  border: 1px solid #b7836d;
+  background-color: #ffeede;
+  color: #b7836d;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-button:disabled {
+  background-color: #f3f3f3;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-button img {
+  vertical-align: middle;
+  height: 10px;
+  width: 10px;
+}
+
+.number-button {
+  background-color: transparent;
+}
+
+.number-button.active {
+  background-color: #b7836d;
+  color: white;
+}
+
+.page-button .previous-icon {
+  margin-right: 5px;
+}
+
+.page-button .next-icon {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .page-button {
+    padding: 8px 12px;
+    min-width: 50px;
+    font-size: 0.8rem;
+  }
+
+  .page-button img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .page-button .previous-icon,
+  .page-button .next-icon {
+    margin: 0 3px;
+  }
+
+  .number-button {
+    padding: 8px 12px;
+  }
+
+  .page-item-ellipsis {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}

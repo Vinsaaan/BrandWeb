@@ -1,0 +1,68 @@
+.create-new-brand-btn {
+  padding: 10px 20px;
+  background-color: #b7836d; /* Your shade of orange */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  text-align: center;
+}
+
+.create-new-brand-btn:hover {
+  background-color: #905c46; /* Lighter shade for hover */
+}
+
+/* Style for the popup overlay */
+.create-brand-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Above other content */
+}
+
+/* Style for the popup content box */
+.create-brand-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust as needed */
+  text-align: center;
+}
+
+/* Style for the input field in the popup */
+.brand-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for buttons in the popup */
+.create-brand-popup .create-btn,
+.create-brand-popup .cancel-btn {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+  width: 100px;
+}
+
+.create-brand-popup .cancel-btn {
+  background-color: #f44336; /* Red background */
+}

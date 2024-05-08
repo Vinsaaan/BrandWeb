@@ -1,0 +1,210 @@
+.table-common {
+  width: 1200px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.admin-brand-header {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-brand-title-2 {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  color: black !important;
+  font-size: 48px;
+}
+
+.table-common tbody tr:hover {
+  cursor: pointer;
+}
+
+.table1 thead,
+.table3 thead {
+  background-color: #b7836d;
+  color: white;
+}
+
+.table1 tbody tr:nth-child(odd),
+.table3 tbody tr:nth-child(odd) {
+  background-color: #ffeede;
+}
+
+.table1 tbody tr:nth-child(even),
+.table3 tbody tr:nth-child(even) {
+  background-color: #ffe5cd;
+}
+
+.table2 thead {
+  background-color: #b76d6d;
+  color: white;
+}
+
+.table2 tbody tr:nth-child(odd) {
+  background-color: #ffdede;
+}
+
+.table2 tbody tr:nth-child(even) {
+  background-color: #ffcdcd;
+}
+
+.table-common th,
+.table-common td {
+  padding: 12px;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.category-dropdown {
+  font-size: 1rem;
+  padding: 5px 40px;
+  margin-right: 10px;
+}
+
+.brand-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.brand-title {
+  text-align: center;
+  margin: 0 10px;
+  font-size: 36px;
+}
+
+.edit-icon {
+  margin-right: 5px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  margin-left: 80px;
+}
+
+.save-icon {
+  cursor: pointer;
+  height: 25px;
+  width: 20px;
+  margin-left: 15px;
+}
+
+.table1-3-title .brand-title {
+  color: #b7836d;
+}
+
+.table2-title .brand-title {
+  color: #b76d6d;
+}
+
+.brand-section {
+  margin-bottom: 100px;
+  margin-top: 25px;
+}
+
+.brand-header {
+  text-align: center; /* Center-align the text */
+}
+
+.brand-title {
+  /* Ensure this is also centered, if not already inheriting from brand-header */
+  text-align: center;
+}
+
+.admin-brand-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modify-product-button {
+  padding: 10px 20px;
+  background-color: #6d93b7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  text-align: center;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+  .table-common {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+
+  .table-common th,
+  .table-common td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .brand-header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .category-dropdown {
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .brand-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .edit-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: -180px;
+  }
+
+  .delete-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 250px;
+    margin-top: -20px;
+  }
+}

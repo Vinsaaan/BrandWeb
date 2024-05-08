@@ -1,0 +1,115 @@
+.item-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.item-details-title {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 64px;
+  color: #905c46;
+}
+
+.item-details-category,
+.item-details-last-modified {
+  color: #905c46;
+  margin: 4px 0;
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+.item-details-series {
+  display: flex;
+  align-items: center;
+  color: #905c46;
+  margin: 4px 0;
+  font-size: 30px;
+  margin-left: 80px;
+  gap: 10px;
+}
+
+.item-details-edit-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
+
+.item-details-series input {
+  font-size: 20px;
+  color: #905c46;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 200px;
+  padding: 5px;
+}
+
+.item-details-series button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item-details-series .save-button {
+  background-color: #28a745;
+}
+
+.item-details-series .cancel-button {
+  background-color: #dc3545;
+}
+
+.item-details-series .save-button:hover,
+.item-details-series .cancel-button:hover {
+  opacity: 0.9;
+}
+
+.item-label {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .item-details-title {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 36px; /* Smaller font size for mobile */
+  }
+
+  .item-details-category,
+  .item-details-series {
+    font-size: 18px; /* Smaller font size for mobile */
+    margin-left: 10px;
+    align-items: flex-start;
+  }
+
+  .item-details-series {
+    gap: 5px;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+  }
+
+  .item-details-series span,
+  .item-details-series input {
+    flex-shrink: 0; /* Prevent these elements from shrinking */
+  }
+
+  .item-details-edit-icon {
+    margin-left: 5px; /* Small space between text and icon */
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+  }
+
+  .item-details-series input {
+    font-size: 16px; /* Adjust font size for mobile */
+    width: auto; /* Auto width to fit content */
+    margin-top: 0; /* Remove additional margin */
+  }
+
+  .item-details-series button {
+    padding: 5px 10px; /* Adjust button size for mobile */
+    margin-top: 5px; /* Add margin for vertical layout */
+  }
+}

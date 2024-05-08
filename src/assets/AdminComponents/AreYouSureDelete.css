@@ -1,0 +1,67 @@
+/* Overlay covering the entire viewport */
+.delete-confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+}
+
+/* Popup container */
+.delete-confirmation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: auto; /* Adjust width as necessary */
+  max-width: 400px; /* Prevent it from becoming too wide on larger screens */
+}
+
+/* Styling for the message */
+.delete-confirmation p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-confirmation .delete-item {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+/* General button styling */
+.delete-confirmation button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+/* Delete/Yes button */
+.delete-confirmation button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-confirmation button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Cancel button */
+.delete-confirmation button.cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.delete-confirmation button.cancel:hover {
+  background-color: #5a6268;
+}

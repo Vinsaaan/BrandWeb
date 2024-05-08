@@ -1,0 +1,88 @@
+.track-number-table-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.track-number-table {
+  border-collapse: collapse;
+  width: 1300px;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.track-number-table,
+.track-number-table th,
+.track-number-table td {
+  border: 1px solid #b7836d;
+}
+
+.track-number-table thead {
+  background-color: #b7836d;
+  color: white;
+}
+
+.track-number-table tbody tr:nth-child(odd) {
+  background-color: #ffeede;
+}
+
+.track-number-table tbody tr:nth-child(even) {
+  background-color: #ffe5cd;
+}
+
+.track-number-table th,
+.track-number-table td {
+  padding: 12px;
+}
+
+.track-number-table td img {
+  cursor: pointer;
+}
+
+.track-number-table td img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .track-number-table {
+    margin-left: 0;
+    border: 0;
+  }
+
+  .track-number-table thead {
+    display: none; /* Hide the header on small screens */
+  }
+
+  .track-number-table,
+  .track-number-table tbody,
+  .track-number-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .track-number-table tr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b7836d;
+  }
+
+  .track-number-table td {
+    display: block;
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Adjust padding for readability */
+    border-bottom: 1px dotted #b7836d; /* Dotted line for separation */
+  }
+
+  .track-number-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .track-number-table td:before {
+    /* Key-value pairing: label */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    width: 50%; /* Adjust width as needed */
+  }
+}

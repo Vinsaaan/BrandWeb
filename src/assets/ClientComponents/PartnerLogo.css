@@ -1,0 +1,78 @@
+.partner-logos {
+  width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.partner-logos h2 {
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.partner-logos .logos-animation {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  animation: moveLogos linear infinite;
+  animation-duration: 20s;
+}
+
+.partner-logos .logo-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 40px;
+}
+
+.partner-logos .logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 90px;
+}
+
+@keyframes moveLogos {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-135%);
+  }
+}
+
+.partner-logos.paused .logos-animation {
+  animation-play-state: paused;
+}
+
+.partner-logos:hover .logos-animation {
+  animation-play-state: paused;
+}
+
+.partner-logos:hover .logos-animation .logo-container {
+  animation-play-state: paused;
+}
+
+.partner-logos .logo-container:hover {
+  animation-play-state: running !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .partner-logos .logo-container {
+    margin: 0 10px;
+  }
+
+  .partner-logos .logo {
+    width: 100px;
+  }
+
+  .partner-logos .logo-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 40px;
+  }
+}

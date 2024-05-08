@@ -1,0 +1,40 @@
+.edit-description-container {
+  width: 90%;
+  margin: auto;
+}
+
+.edit-description-container .ql-container {
+  height: 450px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-description-container .ql-toolbar {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.edit-description-container .ql-editor {
+  min-height: 280px;
+  background-color: white;
+}
+
+.edit-description-container .ql-toolbar .ql-picker-label,
+.edit-description-container .ql-toolbar button {
+  color: black;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .edit-description-container .ql-container {
+    height: 300px;
+  }
+
+  .edit-description-container .ql-editor {
+    min-height: 200px;
+  }
+
+  .edit-description-container {
+    width: 90%;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+.edit-partner-logo-container {
+  margin-left: 40px;
+}
+
+.edit-partner-logo-btn {
+  padding: 10px 20px;
+  background-color: #6d93b7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  text-align: center;
+}
+
+.edit-partner-logo-btn:hover {
+  background-color: #a1d0ff;
+}
+
+@media (max-width: 768px) {
+  .edit-partner-logo-btn {
+    width: 105px;
+    margin-top: 10px;
+  }
+}

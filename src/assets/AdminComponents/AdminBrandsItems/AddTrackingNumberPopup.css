@@ -1,0 +1,127 @@
+.add-tracking-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.add-tracking-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  max-height: 80%;
+}
+
+.header-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-row button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.header-row button:active {
+  position: relative;
+}
+
+.header-row button img {
+  width: 20px;
+  height: 20px;
+}
+
+.header-row .number-input {
+  width: 40px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.tracking-inputs {
+  margin-top: 10px;
+  overflow-y: auto; /* Make the container scrollable */
+  height: 300px; /* Fixed height for the tracking numbers container */
+}
+
+.tracking-input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.tracking-input-row label {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.add-tracking-popup input[type="text"]:not(.number-input) {
+  padding: 5px;
+  width: 100%;
+}
+
+.add-tracking-buttons {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.save-btn,
+.cancel-btn {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .add-tracking-popup {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .tracking-inputs {
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5px;
+    overflow-y: auto;
+    height: 300px;
+  }
+
+  .header-row .number-input {
+    width: 40px;
+    margin: 0 5px;
+    text-align: center;
+  }
+}

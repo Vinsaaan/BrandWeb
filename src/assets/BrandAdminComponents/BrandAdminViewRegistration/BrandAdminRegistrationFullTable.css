@@ -1,0 +1,77 @@
+.registration-full-table-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.registration-full-table {
+  border-collapse: collapse;
+  width: 100%; /* Adjusted to be responsive */
+  margin: 0 auto; /* Center table without fixed left margin */
+  text-align: center;
+}
+
+.registration-full-table,
+.registration-full-table th,
+.registration-full-table td {
+  border: 1px solid #b7836d;
+}
+
+.registration-full-table thead {
+  background-color: #b7836d;
+  color: white;
+}
+
+.registration-full-table tbody tr:nth-child(odd) {
+  background-color: #ffeede;
+}
+
+.registration-full-table tbody tr:nth-child(even) {
+  background-color: #ffe5cd;
+}
+
+.registration-full-table th,
+.registration-full-table td {
+  padding: 12px;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .registration-full-table {
+    border: 0;
+  }
+
+  .registration-full-table thead {
+    display: none; /* Hide the header on small screens */
+  }
+
+  .registration-full-table,
+  .registration-full-table tbody,
+  .registration-full-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .registration-full-table tr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b7836d;
+  }
+
+  .registration-full-table td {
+    display: block;
+    text-align: left; /* Align text to the left */
+    padding: 8px; /* Adjust padding for readability */
+    border-bottom: 1px dotted #b7836d; /* Dotted line for separation */
+  }
+
+  .registration-full-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .registration-full-table td:before {
+    /* Key-value pairing: label for responsive design */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    width: 50%; /* Adjust width as needed */
+  }
+}

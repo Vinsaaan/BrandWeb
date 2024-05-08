@@ -1,0 +1,66 @@
+.edit-partner-logo-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* Ensure it's above other content */
+}
+
+.edit-partner-logo-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%; /* Adjust based on your needs */
+  max-width: 600px; /* Adjust based on your needs */
+}
+
+.edit-partner-logo-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Spacing between logos */
+  margin-top: 20px;
+}
+
+.logo-item img {
+  width: 100px; /* Adjust based on your needs */
+  height: auto;
+  border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.preview-btn {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.delete-logo {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}

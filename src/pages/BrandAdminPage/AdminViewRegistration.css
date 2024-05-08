@@ -1,0 +1,13 @@
+.admin-view-registration-container {
+  background-color: #fffdf5;
+  padding: 30px;
+  margin-top: -40px;
+  min-height: 100vh;
+}
+
+.viewregistered-brand-name {
+  color: #b7836d;
+  font-size: 90px;
+  bottom: 20px;
+  margin-left: 30px;
+}

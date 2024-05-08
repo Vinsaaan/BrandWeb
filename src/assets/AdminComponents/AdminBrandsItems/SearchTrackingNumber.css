@@ -1,0 +1,77 @@
+/* SearchTrackingNumber.css */
+.search-tracking-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  margin-left: 990px;
+  margin-top: -80px;
+}
+
+.tracking-input-container {
+  position: relative;
+  background-color: #ffe0c2;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.tracking-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.tracking-icon.search-icon {
+  position: absolute;
+  left: 30px;
+}
+
+.tracking-search-input {
+  padding-left: 60px;
+  padding-right: 40px;
+  border: none;
+  height: 40px;
+  font-size: 13px;
+  outline: none;
+  width: 150px;
+}
+
+.tracking-icon.close-icon {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
+.tracking-search-input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-tracking-container {
+    margin: 20px;
+  }
+
+  .tracking-input-container {
+    border-radius: 20px;
+    padding: 12px 15px;
+  }
+
+  .tracking-search-input {
+    font-size: 14px;
+    width: 230px;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .tracking-icon.search-icon {
+    position: absolute;
+    left: 25px;
+  }
+
+  .tracking-icon.close-icon {
+    right: 30px;
+  }
+}

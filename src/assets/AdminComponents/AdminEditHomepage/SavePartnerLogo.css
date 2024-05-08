@@ -1,0 +1,29 @@
+#save-logo-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.save-partner-logo-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-partner-logo-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .save-partner-logo-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: -70px;
+  }
+}
