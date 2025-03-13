@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDFcpWl5SZ9vJ_dbM7L5C0HbzVmhAkWmtg",
+  apiKey: "-",
   authDomain: "senja-website.firebaseapp.com",
   projectId: "senja-website",
   storageBucket: "senja-website.appspot.com",
